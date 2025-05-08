@@ -226,6 +226,18 @@ function CreateDevis() {
       <div className="form-row">
         {(state.type_de_garantie === 'DO' || state.type_de_garantie === 'TRCDO') && (
           <div className="form-group">
+            <label htmlFor="tauxSeulDO">Taux Seul DO:</label>
+            <input
+              type="number"
+              id="tauxSeulDO"
+              value={state.taux_do}
+              onChange={(e) => dispatch({ type: 'SET_FIELD', field: 'taux_do', value: e.target.value })}
+              className="axa-input"
+            />
+          </div>
+        )}
+        {(state.type_de_garantie === 'DO' || state.type_de_garantie === 'TRCDO') && (
+          <div className="form-group">
             <label htmlFor="primeSeulDO">Prime Seul DO:</label>
             <input
               type="text"
@@ -238,16 +250,12 @@ function CreateDevis() {
         )}
         {(state.type_de_garantie === 'DO' || state.type_de_garantie === 'TRCDO') && (
           <div className="form-group">
-            <label htmlFor="tauxSeulDO">Taux Seul DO:</label>
-            <input
-              type="number"
-              id="tauxSeulDO"
-              value={state.taux_do}
-              onChange={(e) => dispatch({ type: 'SET_FIELD', field: 'taux_do', value: e.target.value })}
-              className="axa-input"
-            />
+            <label></label>
           </div>
         )}
+      </div>
+      
+      <div className="form-row">
         {( state.type_de_garantie === 'TRC' || state.type_de_garantie === 'TRCDO') && (
         <div className="form-group">
           <label htmlFor="primeSeulTRC">Prime Seul TRC:</label>
@@ -259,7 +267,7 @@ function CreateDevis() {
             className="axa-input"
           />
         </div>
-      )}
+        )}
         {(state.type_de_garantie === 'TRC' || state.type_de_garantie === 'TRCDO') && (
           <div className="form-group">
             <label htmlFor="tauxSeulTRC">Taux Seul TRC:</label>
@@ -272,6 +280,14 @@ function CreateDevis() {
             />
           </div>
         )}
+        {(state.type_de_garantie === 'TRC' || state.type_de_garantie === 'TRCDO') && (
+          <div className="form-group">
+            <label></label>
+          </div>
+        )}
+      </div>
+      
+      <div className="form-row">
         {(state.type_de_garantie === 'TRCDO') && (
           <div className="form-group">
             <label htmlFor="primeDUO">Prime DUO:</label>
@@ -319,20 +335,7 @@ function CreateDevis() {
         </div>
       </div>
 
-      <div className="form-row">
-        <div className="form-group">
-          <label htmlFor="adresseChantier">Adresse du Chantier:</label>
-          <input
-            type="text"
-            id="adresseChantier"
-            value={state.adresse_chantier}
-            onChange={(e) =>  dispatch({ type: 'SET_FIELD', field: 'adresse_chantier', value: e.target.value })}
-            className="axa-input"
-          />
-        </div>
-      </div>
-
-      <div className="form-row">
+       <div className="form-row">
         <div className="form-group">
           <label htmlFor="garantiesDO">Garanties Dommages Ouvrage:</label>
           <input
@@ -409,6 +412,22 @@ function CreateDevis() {
             className="axa-input"
           />
         </div>
+      </div>
+
+      <div className="form-row">
+        <div className="form-group">
+          <label htmlFor="adresseChantier">Adresse du Chantier:</label>
+          <input
+            type="text"
+            id="adresseChantier"
+            value={state.adresse_chantier}
+            onChange={(e) =>  dispatch({ type: 'SET_FIELD', field: 'adresse_chantier', value: e.target.value })}
+            className="axa-input"
+          />
+        </div>
+      </div>
+      
+      <div className="form-row">
         <div className="form-group">
           <label htmlFor="descriptions">Descriptions:</label>
           <textarea
@@ -419,7 +438,7 @@ function CreateDevis() {
           />
         </div>
       </div>
-      
+
       <div>
           <Button variant="contained" onClick={handleReturn} style={{ left: '-10px' }}>Retour</Button>
           <Button variant="contained" onClick={handleSubmit} > Valider</Button>
