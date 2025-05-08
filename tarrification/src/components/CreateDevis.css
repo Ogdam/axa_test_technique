@@ -1,0 +1,226 @@
+/* Couleurs AXA (à adapter selon la charte graphique exacte) */
+:root {
+    --axa-blue: #003087;
+    --axa-light-blue: #0071BC;
+    --axa-grey: #666666;
+    --axa-light-grey: #f0f0f0;
+    --axa-white: #ffffff;
+    --axa-red: #D71920; /* Couleur secondaire possible */
+  }
+  
+  body {
+    font-family: Arial, sans-serif; /* Typographie AXA (à vérifier) */
+    color: var(--axa-grey);
+    background-color: var(--axa-light-grey);
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    background-color: var(--axa-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .axa-title {
+    color: var(--axa-blue);
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .axa-button {
+    background-color: var(--axa-blue);
+    color: var(--axa-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .axa-button.primary:hover {
+    background-color: var(--axa-light-blue);
+  }
+  
+  .input {
+    padding: 10px;
+    border: 1px solid var(--axa-grey);
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    max-height: 40px;;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--axa-blue);
+  }
+  
+  .filters {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .filters label {
+    font-weight: bold;
+    color: var(--axa-blue);
+  }
+  
+  .axa-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid var(--axa-grey);
+  }
+  
+  .axa-table th,
+  .axa-table td {
+    border: 1px solid var(--axa-grey);
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .axa-table th {
+    background-color: var(--axa-light-blue);
+    color: var(--axa-white);
+    font-weight: bold;
+  }
+  
+  .axa-link {
+    color: var(--axa-blue);
+    text-decoration: none;
+  }
+  
+  .axa-link:hover {
+    text-decoration: underline;
+  }
+
+  .filter-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%; /* Assurez-vous que tous les filtres prennent la même largeur */
+    max-width: 300px; /* Vous pouvez ajuster cette valeur selon vos besoins */
+    box-sizing: border-box;
+  }
+
+  .btn {
+    margin-bottom: 10px;
+  }
+
+  .container {
+    max-width: 1200px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centre le formulaire horizontalement */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Espacement entre les champs */
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Champs prennent toute la largeur */
+    max-width: 300px; /* Largeur maximale des champs */
+  }
+  
+  .axa-input {
+    padding: 12px; /* Champs plus grands */
+    font-size: 16px; /* Texte plus grand */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .axa-checkbox {
+    width: auto;
+    margin-top: 10px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px; /* Espacement entre les colonnes */
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permet de passer à plusieurs lignes si nécessaire */
+    width: 100%;
+  }
+  
+  .axa-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .axa-button.primary:hover {
+    background-color: #0056b3;
+  }
+
+  .container.axa-theme {
+    background-color: var(--axa-light-grey);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .axa-title {
+    color: var(--axa-blue);
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .axa-input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid var(--axa-grey);
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .axa-checkbox {
+    margin-top: 10px;
+  }
+
+  .axa-button.primary {
+    background-color: var(--axa-blue);
+    color: var(--axa-white);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .axa-button.primary:hover {
+    background-color: var(--axa-light-blue);
+  }

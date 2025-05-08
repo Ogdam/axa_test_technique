@@ -1,0 +1,6 @@
+# Global
+.idea/
+.vscode/
+*.bak
+*.tmp
+*.lock

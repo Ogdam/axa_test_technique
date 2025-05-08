@@ -1,0 +1,13 @@
+# Backend (Django)
+*.pyc
+__pycache__/
+db.sqlite3
+*.log
+*.pot
+*.py[co]
+*.sqlite3
+*.env
+*.DS_Store
+*.swp
+*.swo
+.venv/

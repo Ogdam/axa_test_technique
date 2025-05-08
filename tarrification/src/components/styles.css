@@ -1,0 +1,165 @@
+/* Couleurs AXA (à adapter selon la charte graphique exacte) */
+:root {
+    --axa-blue: #003087;
+    --axa-light-blue: #0071BC;
+    --axa-grey: #666666;
+    --axa-light-grey: #f0f0f0;
+    --axa-white: #ffffff;
+    --axa-red: #D71920; /* Couleur secondaire possible */
+  }
+  
+  body {
+    font-family: Arial, sans-serif; /* Typographie AXA (à vérifier) */
+    color: var(--axa-grey);
+    background-color: var(--axa-light-grey);
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    background-color: var(--axa-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .axa-title {
+    color: var(--axa-blue);
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .axa-button {
+    background-color: var(--axa-blue);
+    color: var(--axa-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .axa-button.primary:hover {
+    background-color: var(--axa-light-blue);
+  }
+  
+  .input {
+    padding: 10px;
+    border: 1px solid var(--axa-grey);
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--axa-blue);
+  }
+  
+  .filters {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .filter-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%; /* Assurez-vous que tous les filtres prennent la même largeur */
+    max-width: 300px; /* Vous pouvez ajuster cette valeur selon vos besoins */
+    box-sizing: border-box;
+  }
+
+  .filter-item label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .filters label {
+    font-weight: bold;
+    color: var(--axa-blue);
+  }
+  
+  .axa-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid var(--axa-grey);
+  }
+  
+  .axa-table th,
+  .axa-table td {
+    border: 1px solid var(--axa-grey);
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .axa-table th {
+    background-color: var(--axa-light-blue);
+    color: var(--axa-white);
+    font-weight: bold;
+  }
+  
+  .axa-link {
+    color: var(--axa-blue);
+    text-decoration: none;
+  }
+  
+  .axa-link:hover {
+    text-decoration: underline;
+  }
+
+  .projet-list-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+
+  .projet-list-container .axa-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .projet-list-container .btn {
+    margin-bottom: 20px;
+  }
+
+  .projet-list-container .filters {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .projet-list-container .filter-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .projet-list-container .filter-item label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .projet-list-container .projet-list-input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+  }
